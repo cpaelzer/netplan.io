@@ -325,7 +325,7 @@ network:
             link: enp0s25
 ```
 
-Then libvirtd would be configured to use this bridge by adding the following content to a new XML file under `/etc/libvirtd/qemu/networks/`. The name of the bridge in the &lt;bridge&gt; tag as well as in &lt;name&gt; need to match the name of the bridge device configured using netplan:
+Then libvirtd would be configured to use this bridge by adding the following content to a new XML file under `/etc/libvirtd/qemu/networks/`. The name of the bridge in the &lt;bridge&gt; tag need to match the name of the bridge device configured using netplan:
 
 ```xml
 <network>
